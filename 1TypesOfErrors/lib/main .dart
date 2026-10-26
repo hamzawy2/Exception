@@ -24,8 +24,8 @@ void main(){
 
   // logical error 
   int num=10;
-  int num1=11;
-  int result=num1+num1;
+  int num1=0;
+  int result=num~/num1;
 
   // try{
   //   // هنا نكتب الاكواد التي احتمال وجود Excptaion فيها
@@ -36,8 +36,10 @@ void main(){
   List<String> name=['hamza','ali',''];
 
   try{
+    print(result);
     print(name[4]);
-  }catch(e){
-    print('type of error ia $e');
+  }
+  catch(e){
+    print('type of error is ${e.toString()}');
   }
 }
